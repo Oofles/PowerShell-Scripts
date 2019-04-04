@@ -13,7 +13,7 @@ ForEach-Object { $a = $_; 1..255 |
                 $os = "Windows" } 
             else { 
                 $os = "Cisco"}; 
-            write-host "10.0.$a.$b OS: $os"; echo "10.0.$a.$b" >> scan_results.txt 
+            write-host "10.0.$a.$b OS: $os"; Write-Output "10.0.$a.$b" >> scan_results.txt 
             }
         }
     } 
