@@ -1,4 +1,7 @@
-﻿# Import the Active Directory Module - necessary for "New-ADUser"
+# Credit goes to Jeff Melnick
+# https://blog.netwrix.com/2018/06/07/how-to-create-new-active-directory-users-with-powershell/
+ 
+# Import the Active Directory Module - necessary for "New-ADUser"
 Import-Module ActiveDirectory
 
 #Enter a path to your import CSV file
