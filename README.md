@@ -17,6 +17,17 @@ This script accomplishes a few things:
 - Multi-threaded based on the host's memory and won't exceed 70%
 - Outputs to a XML, HTML, and JSON
 
+## create_users.ps1
+
+Credit to https://blog.netwrix.com/2018/06/07/how-to-create-new-active-directory-users-with-powershell/
+
+A simple script for creating Active Directory users with a CSV files. You will need to make a CSV will the following headers:
+- username
+- password
+- firstname
+- lastname
+- department
+
 --- 
 
 ## Ping Sweeps
