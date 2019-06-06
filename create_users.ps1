@@ -1,4 +1,5 @@
-﻿Import-Module ActiveDirectory
+﻿# Import the Active Directory Module - necessary for "New-ADUser"
+Import-Module ActiveDirectory
 
 #Enter a path to your import CSV file
 $ADUsers = Import-csv .\users.csv
@@ -20,9 +21,9 @@ foreach ($User in $ADUsers)
        }
        else
        {
-              #If a user does not exist then create a new user account
+       #If a user does not exist then create a new user account
           
-        #Account will be created in the OU listed in the $OU variable in the CSV file; don’t forget to change the domain name in the"-UserPrincipalName" variable
+       #Change the domain name in the"-UserPrincipalName" variable to your domain name
               New-ADUser `
             -SamAccountName $Username `
             -UserPrincipalName "$Username@yourdomain.com" `
@@ -34,6 +35,5 @@ foreach ($User in $ADUsers)
             -DisplayName "$Lastname, $Firstname" `
             -Department $Department `
             -AccountPassword (convertto-securestring $Password -AsPlainText -Force)
-
        }
 }
