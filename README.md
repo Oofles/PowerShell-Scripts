@@ -21,7 +21,7 @@ This script accomplishes a few things:
 
 Credit to https://blog.netwrix.com/2018/06/07/how-to-create-new-active-directory-users-with-powershell/
 
-A simple script for creating Active Directory users with a CSV files. You will need to make a CSV will the following headers:
+A simple script for creating Active Directory users with a CSV files. This will need to be ran on the Domain Controller. You will also need to make a CSV will the following headers:
 - username
 - password
 - firstname
