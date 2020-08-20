@@ -2,6 +2,12 @@
 
 Just a collection of PowerShell scripts that I wrote or borrowed for various purposes. 
 
+## ctfdConversion.ps1
+
+This script is built to convert CSV files to CTFd JSON format. The tricky thing here is making a CSV become an array capable JSON file, so a lot of manual scripting needs to be accomplished. 
+
+Some of these functions can be pulled out and used for other purposes.
+
 ## join_domain.ps1
 
 Changes the computer name to be "Windows-[Last 6 of MAC]" and then joins to a domain using Admin credentials
